@@ -56,9 +56,14 @@ You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app nepali_calendar
+bench get-app https://github.com/photexnp/nepali_calendar --branch develop
+bench --site $YOUR_SITE install-app nepali_calendar
+bench --site $YOUR_SITE migrate
+bench build --app nepali_calendar
 ```
+
+Developed and tested on Frappe/ERPNext 17 (develop). Some features hook into Frappe internals, so on older
+versions test on a non-production site first.
 
 ### Contributing
 
