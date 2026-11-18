@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2026-11-18 06:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": ["date_display", "date_display_help"],
+ "fields": [
+  {
+   "default": "Both",
+   "description": "How dates are shown in forms, lists, reports, prints and the calendar. Dates are always stored as AD. Each user can override this in their own settings (User > Date Display).",
+   "fieldname": "date_display",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Default Date Display",
+   "options": "Both\nBS\nAD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_display_help",
+   "fieldtype": "HTML",
+   "label": "Help",
+   "options": "<ul class=\"text-muted small\"><li><b>Both</b>: AD with the BS date alongside, e.g. 18-11-2026 (2 Mangsir 2083). Date fields get a BS picker button.</li><li><b>BS</b>: dates are shown and typed in Bikram Sambat (YYYY-MM-DD, e.g. 2083-08-02); focusing a date field opens the BS picker.</li><li><b>AD</b>: standard Frappe behaviour; no BS anywhere.</li></ul><p class=\"text-muted small\">Excel/CSV exports get an extra BS column next to each date column unless the display is AD. Reload the page after changing this.</p>"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-18 06:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Nepali Calendar",
+ "name": "Nepali Calendar Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {"create": 1, "delete": 1, "email": 1, "print": 1, "read": 1, "role": "System Manager", "share": 1, "write": 1}
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

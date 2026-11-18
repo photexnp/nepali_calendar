@@ -1,0 +1,12 @@
+{
+	"name": "nepali_calendar",
+	"private": true,
+	"license": "MIT",
+	"dependencies": {
+		"nepali-date-converter": "3.4.2"
+	},
+	"scripts": {
+		"test": "node --test nepali_calendar/tests/js/"
+	},
+	"type": "module"
+}
