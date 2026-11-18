@@ -62,7 +62,7 @@ def _to_date(value) -> datetime.date | None:
 		match = re.match(r"^(\d{4})-(\d{2})-(\d{2})", value.strip())
 		if match:
 			try:
-				return datetime.date(*map(int, match.groups()))
+				return datetime.date(*(int(part) for part in match.groups()))
 			except ValueError:
 				return None
 	return None
